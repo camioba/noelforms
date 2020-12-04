@@ -1,0 +1,85 @@
+<html>
+<head>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="colunas.css">
+    <link rel="stylesheet" href="contato.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto&display=swap" rel="stylesheet">
+    <title>Papai Noel Existe?</title>
+</head>
+<body>
+    <header class="menu">
+        <ul>
+            <li>
+            <a href="home.html">Inicio</a>
+            </li>
+            <li>
+            <a href="fotos.html">Fotos</a>
+            </li>
+            <li>
+            <a href="contato.html">Contato</a>
+             </li>
+        </ul> 
+        <div>
+            <a href="#inicio">
+            <a id="inicio"><h1>Papai Noel existe?</h1></a>
+            </a>
+        </div>
+    </header>
+ 
+    <div class="divform">
+        <form action="https://formspree.io/f/xjvpedzv" method="post">
+            <h2>Informações 1</h2>
+            <label for="nome">Nome</label><br>
+            <input type="text" id="nome" name="nome" placeholder="Escreva..."><br>
+
+            <label for="data">Data de nascimento</label><br>
+            <input type="date" id="data" name="data"><br>
+
+            <label for="pais">País</label>
+            <select name="pais" id="pais">
+                <option value="brasil">Brasil</option>
+                <option value="chile">Chile</option>
+                <option value="peru">Peru</option>
+            </select>
+            
+            <h2>Informações 2</h2>
+            <input type="checkbox" id="veículo" name="veículo1" value="Bike">
+            <label for="veículo1">Bike</label><br>
+            <input type="checkbox" id="veículo" name="veículo2" value="Carro">
+            <label for="veículo2">Carro</label><br>
+            <input type="checkbox" id="veículo" name="veículo3" value="Moto">
+            <label for="veículo3">Moto</label><br>
+
+            <h2>Informações 3</h2>
+            <input type="radio" id="ela" name="pronome" value="ela">
+            <label for="ela">Ela</label><br>
+            <input type="radio" id="ele" name="pronome" value="ele">
+            <label for="ele">Ele</label><br>
+            <input type="radio" id="outro" name="pronome" value="Outro">
+            <label for="outro">Outro</label><br>
+
+            <label for="mensagem"><h2>Escreva uma mensagem</h2></label>
+            <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Escreva aqui sua mensagem..."></textarea><br>
+
+            <input type="reset" value="Limpar dados">
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+    
+    <div class="bodyfinal col100">
+    </div>
+
+    <footer>
+        <div class="caixona clearfix">
+            <div class="txtfooter col20">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="meiofooter col60">
+            </div>
+            <div class="divfooter col20">
+                <img width=60% src="arvfooter.jpg" alt="arvore de natal" class="imgfooter">
+            </div>
+            </div>
+</body>
+</html>

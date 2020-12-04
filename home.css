@@ -1,0 +1,181 @@
+.menu {
+    font-family: 'PT Sans', sans-serif;
+    text-align: center;       
+}
+
+.menu ul {
+    background-color: whitesmoke ;
+    position: fixed;
+    padding: 5px;
+    width: 100%;
+}
+
+.menu li {
+    float: left;
+    font-size: 1.1em;
+    font-weight: normal;
+}
+
+.menu li a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    padding: 15px 30px;
+}
+
+li a:hover {
+    color:#6b8e23;
+}
+
+h1 {
+    background-image: url("modulov.png");
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 4em;
+    color: whitesmoke;
+    text-align: center;
+    margin-top: 0px;
+    padding-top: 130px;
+    padding-bottom: 70px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    line-height: 1.5;
+    font-size: 1.1em;
+}
+
+p {
+    font-size: 1.1em;
+    margin: 30px 30px 30px 30px;
+    
+}
+
+.txt {
+    font-size: 17px;
+    background-color: rgb(50, 131, 33);
+    color: blanchedalmond;
+    text-align: left;
+    margin: 0px auto;
+    padding: 80px 0px 80px 0px;
+}
+
+.txt a {
+    text-decoration: none;
+    color: blanchedalmond
+}
+
+.txte {
+    font-size: 1em;
+    background-color: rgb(50, 131, 33);
+    color: blanchedalmond;
+    text-align: left;
+    margin: 0px auto;
+    padding: 0px;
+}
+
+.txte:hover {
+    background-color: #a80505cc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+
+h2 {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 2em;
+    margin: 30px 30px 30px 0px;
+    text-align: right;
+    text-decoration: underline;
+    
+}
+
+.caixa {
+    text-align: center;
+    padding: 50px 0px 100px 0px;
+    margin: 0px auto;
+    background-color: whitesmoke;
+}
+
+
+.esquerda {
+    float: left;
+    margin: 0px auto;
+    margin-left: 9vw;
+    padding: 0px auto;
+}
+
+.direita {
+    float: right;
+    margin: 0px auto;
+    padding: 0px auto;
+    margin-right: 9vw;
+}
+
+.imgesq {
+    background-color: goldenrod;
+    float: left;
+    margin: 0px auto;
+    margin-left: 9vw;
+    padding: 0px;
+    
+}
+
+.imgdir {
+    background-color: goldenrod;
+    float: right;
+    margin: 0px auto;
+    margin-right: 9vw;
+    padding: 0px;
+}
+
+.clearfix:after {
+    content: ".";
+    visibility: hidden;
+    clear: both;
+    display: block;
+    height: 0;
+}
+
+footer p { 
+    margin-top: 60px;
+}
+
+.txtfooter {
+    background-image: url("modulov.png");
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8em;
+    color:black;
+    text-align: left;
+    margin: 0px auto;
+    padding: 0px auto;
+    float: left;
+    height: 25%;
+}
+
+.meiofooter {
+    background-image: url("modulov.png");
+    margin: 0px;
+    height: 25%;
+    float: left;
+}
+
+.divfooter {
+    background-image: url("modulov.png");
+    margin: 0px auto;
+    padding: 0px;
+    float: left;
+    height: 25%;   
+}
+
+.imgfooter {
+    margin-top: 30px;
+}
+
+.caixaf {
+    text-align: center;
+    padding: 0px;
+    margin: 0px auto;
+    background-color: whitesmoke;
+}
