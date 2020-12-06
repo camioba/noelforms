@@ -2,18 +2,21 @@
     font-family: 'Roboto', sans-serif;
     text-align: center;       
 }
-
 .menu ul {
-    background-color: whitesmoke ;
+    background-image: url("modulov.png");
     position: fixed;
-    padding: 5px;
+    padding: 0px;
     width: 100%;
+    height: 70px;
+    margin: 0px;
+
 }
 
 .menu li {
     float: left;
     font-size: 1.1em;
     font-weight: normal;
+    
 }
 
 .menu li a {
@@ -21,29 +24,36 @@
     color: black;
     text-decoration: none;
     text-align: center;
-    padding: 15px 30px;
+    padding: 20px 0px 0px 0px;
+    margin-left: 9vw;
 }
 
 li a:hover {
     color:#6b8e23;
 }
 
-body  {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.1em;
-    text-align: center;
-    line-height: 20px;
+header div {
+    
+    background-image: url(modulov.png);
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 1.5em;
+    color: black;
+    text-align: left;
+    margin: 0px;
+    padding-top: 80px;
+    padding-bottom: 20px;
 }
 
 h1 {
-    background-image: url("modulov.png");
-    font-family: 'Archivo Black', sans-serif;
-    font-size: 4em;
-    color: whitesmoke;
+    margin: 0px 0px 0px 9vw;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
     text-align: center;
-    margin-top: 0px;
-    padding-top: 130px;
-    padding-bottom: 70px;
+    line-height: 1.5;
+    font-size: 1.1em;
 }
 
 
@@ -60,19 +70,23 @@ h2 {
     margin: 20px 0px 20px 0px;
 }
 
-.divform {
-    background-color:white;
-
+.caixa {
+    text-align: center;
+    padding: 50px 0px 100px 0px;
+    margin: 0px auto;
+    background-color: whitesmoke;
 }
 
 form {
-    background-color: whitesmoke;
-    border-radius: 10px;
+    background-color:rgba(49, 131, 33, 0.151);
+    border-radius: 0px;
     padding: 20px;
-    margin-left: 50vh;
+    margin: 0px 9vw 0px 9vw;
     color: black;
     text-align: left;
-    width: 50%;
+    width: 100%;
+    position: center;
+    
 }
 
 input[type=text] {
@@ -80,7 +94,7 @@ input[type=text] {
     font-size: 1em;
     width: 30%;
     padding: 10px 10px;
-    border: 2px solid rgba(49, 131, 33, 0.432);
+    border: 2px solid black;
     background-color: white;
     border-radius: 4px;
     margin: 1.5vw;
@@ -89,15 +103,14 @@ input[type=text] {
 }
 
 input[type=text]:hover, input[type=text]:focus{
-    border: 2px solid rgb(50, 131, 33);
-    background-color:  rgba(49, 131, 33, 0.26);
+    background-color:  rgba(245, 245, 245, 0.5);
 }
 
 input[type=date] {
     font-family: 'Roboto', sans-serif;
     font-size: 1em;
     padding: 10px 10px;
-    border: 2px solid rgba(49, 131, 33, 0.432);
+    border: 2px solid black;
     background-color: white;
     border-radius: 4px;
     margin: 1.5vw;
@@ -106,15 +119,14 @@ input[type=date] {
 }
 
 input[type=date]:hover, input[type=date]:focus {
-    border: 2px solid rgb(50, 131, 33);
-    background-color:  rgba(49, 131, 33, 0.26);
+    background-color:  rgba(245, 245, 245, 0.5);
 }
 
 select {
     font-family: 'Roboto', sans-serif;
     padding: 10px 10px;
-    margin:     1.5vw;
-    border: 2px solid rgba(49, 131, 33, 0.432);
+    margin: 1.5vw;
+    border: 2px solid black;
     border-radius: 4px;
     background-color: white;
     display: list-item;
@@ -123,8 +135,7 @@ select {
 }
 
 select:focus, select:hover {
-    border: 2px solid rgb(50, 131, 33);
-    background-color:  rgba(49, 131, 33, 0.26);
+    background-color:  rgba(245, 245, 245, 0.5);
 }
 
 
@@ -204,11 +215,6 @@ p {
     background-color:rgba(245, 245, 245, 0.5);
 }
 
-
-
-
-
-
 [type="radio"]:not(:checked), 
 [type="radio"]:checked {
     position: absolute;
@@ -236,7 +242,6 @@ p {
     background: white;
     border-radius: 50px;
 }
-
 
 /* checked mark aspect on/off */
 [type="radio"]:not(:checked) + label:after,
@@ -275,17 +280,15 @@ p {
     background-color:rgba(245, 245, 245, 0.5);
 }
 
-
-
 textarea {
     font-family: 'Roboto', serif;
     font-size: 1em;
     display: list-item;
-    width: 90%;
-    padding: 20px 20px;
+    width: 80%;
+    padding: 20px;
     margin: 1.5vw;
     box-sizing: border-box;
-    border: 2px solid rgba(49, 131, 33, 0.432);
+    border: 2px solid black;
     border-radius: 4px;
     resize: none;
     margin-top: 8px;
@@ -293,8 +296,7 @@ textarea {
     transition: 0.5s;
 }    
 textarea:focus, textarea:hover {
-    border: 2px solid rgb(50, 131, 33);
-    background-color:  rgba(49, 131, 33, 0.26);
+    background-color:  rgba(245, 245, 245, 0.5);
 }
 
 input[type=reset], input[type=submit] {
@@ -310,7 +312,7 @@ input[type=reset], input[type=submit] {
 }
 
 input[type=reset]:hover, input[type=submit]:hover {
-    background-color: rgb(50, 131, 33);
+    background-color: rgba(245, 245, 245, 0.5);
 }
 
 footer p { 
@@ -321,7 +323,7 @@ footer p {
     background-image: url("modulov.png");
     font-family: 'Roboto', sans-serif;
     font-size: 0.8em;
-    color: black;
+    color:black;
     text-align: left;
     margin: 0px auto;
     padding: 0px auto;
@@ -329,9 +331,10 @@ footer p {
     height: 25%;
 }
 
+
 .meiofooter {
     background-image: url("modulov.png");
-    margin: 0px auto;
+    margin: 0px;
     height: 25%;
     float: left;
 }
@@ -346,4 +349,20 @@ footer p {
 
 .imgfooter {
     margin-top: 30px;
+}
+
+.caixaf {
+    text-align: center;
+    padding: 0px;
+    margin: 0px auto;
+    background-image: url("modulov.png");
+    background-color: red;
+}
+
+.clearfix:after {
+    content: ".";
+    visibility: hidden;
+    clear: both;
+    display: block;
+    height: 0;
 }

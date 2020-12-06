@@ -2,18 +2,21 @@
     font-family: 'Roboto', sans-serif;
     text-align: center;       
 }
-
 .menu ul {
-    background-color: whitesmoke ;
+    background-image: url("modulov.png");
     position: fixed;
-    padding: 5px;
+    padding: 0px;
     width: 100%;
+    height: 70px;
+    margin: 0px;
+
 }
 
 .menu li {
     float: left;
     font-size: 1.1em;
     font-weight: normal;
+    
 }
 
 .menu li a {
@@ -21,11 +24,28 @@
     color: black;
     text-decoration: none;
     text-align: center;
-    padding: 15px 30px;
+    padding: 20px 0px 0px 0px;
+    margin-left: 9vw;
 }
 
 li a:hover {
     color:#6b8e23;
+}
+
+header div {
+    
+    background-image: url(modulov.png);
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 1.5em;
+    color: black;
+    text-align: left;
+    margin: 0px;
+    padding-top: 80px;
+    padding-bottom: 20px;
+}
+
+h1 {
+    margin: 0px 0px 0px 9vw;
 }
 
 body {
@@ -37,21 +57,8 @@ body {
 
 p {
     font-size: 1.1em;
-    margin: 30px 30px 30px 30px;
-    
+    margin: 30px 30px 30px 30px;   
 }
-
-h1 {
-    background-image: url("modulov.png");
-    font-family: 'Archivo Black', sans-serif;
-    font-size: 4em;
-    color: whitesmoke;
-    text-align: center;
-    margin-top: 0px;
-    padding-top: 130px;
-    padding-bottom: 70px;
-}
-
 
 .caixa {
     text-align: center;
@@ -84,14 +91,6 @@ h1 {
     margin: 0px auto;
     margin-right: 9vw;
     padding: 0px;
-}
-
-.clearfix:after {
-    content: ".";
-    visibility: hidden;
-    clear: both;
-    display: block;
-    height: 0;
 }
 
 footer p { 
@@ -136,4 +135,12 @@ footer p {
     margin: 0px auto;
     background-image: url("modulov.png");
     background-color: red;
+}
+
+.clearfix:after {
+    content: ".";
+    visibility: hidden;
+    clear: both;
+    display: block;
+    height: 0;
 }
