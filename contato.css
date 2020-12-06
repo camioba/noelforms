@@ -171,8 +171,8 @@ p {
     position: absolute;
     width: 5px;
     height: 10px;
-    border: solid black;
-    border-width: 0 3px 3px 0;
+    border: 0px solid black;
+    border-width: 0px 4px 4px 0px;
     top: .3em; left: .6em;
     color: black;
     transition: all .2s;
@@ -203,6 +203,9 @@ p {
 [type="checkbox"]:not(:checked):hover + label:before {
     background-color:rgba(245, 245, 245, 0.5);
 }
+
+
+
 
 
 
@@ -239,12 +242,12 @@ p {
 [type="radio"]:not(:checked) + label:after,
 [type="radio"]:checked + label:after {
     content: "";
-    position: absolute; 
-    width: 10px;
-    height: 10px;
-    border: solid black;    
-    color: black;
-    background-color: black;
+    position: absolute;
+    top: .4em; left: .4em;
+    width: 13px;
+    height: 13px;
+    border: 1px solid black;
+    border-radius: 50px;   
     background: black;
     transition: all .2s;
 }
