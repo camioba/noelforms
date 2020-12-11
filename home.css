@@ -9,7 +9,8 @@
     padding: 0px;
     width: 100%;
     height: 70px;
-    margin: 0px;
+    padding: 0px 0px 0px 7vw;
+    
 
 }
 
@@ -17,7 +18,8 @@
     float: left;
     font-size: 1.1em;
     font-weight: normal;
-    
+    padding: 0px 2vw 0px 2vw;
+    margin-left: 0vw;
 }
 
 .menu li a {
@@ -25,12 +27,13 @@
     color: black;
     text-decoration: none;
     text-align: center;
-    padding: 20px 0px 0px 0px;
-    margin-left: 9vw;
+    padding: 20px 0px 3px 0px;
+   
 }
 
-li a:hover {
-    color:#6b8e23;
+li a:hover, li a:visited, li a:active {
+    border-bottom: #a80505cc solid 4px;
+    transition: .1s ease-in;
 }
 
 header div {
@@ -47,6 +50,7 @@ header div {
 
 h1 {
     margin: 0px 0px 0px 9vw;
+    color: black;
 }
 
 body {
@@ -59,47 +63,54 @@ body {
 p {
     font-size: 1.1em;
     margin: 30px 30px 30px 30px;
-    
 }
 
 .txt {
-    font-size: 17px;
-    background-color: rgb(50, 131, 33);
-    color: blanchedalmond;
-    text-align: left;
-    margin: 0px auto;
-    padding: 80px 0px 80px 0px;
-}
-
-.txt a {
-    text-decoration: none;
-    color: blanchedalmond
-}
-
-.txte {
     font-size: 1em;
     background-color: rgb(50, 131, 33);
     color: blanchedalmond;
     text-align: left;
     margin: 0px auto;
     padding: 0px;
+    position: relative;
+    transition: background-color .4s ease;
 }
 
-.txte:hover {
+.txt:hover {
     background-color: #a80505cc;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
+    box-shadow: 5px 10px black;
+    animation: mymove .5s ease;
+    animation-direction: alternate;
 }
 
+@keyframes mymove {
+    0% {top: 0px; left: 0px;}
+    10% {bottom: 20px; right: 20px;}
+    100% {bottom: 20px; right: 20px;}
+
+}
 
 h2 {
     font-family: 'Archivo Black', sans-serif;
     font-size: 2em;
-    margin: 30px 30px 30px 0px;
+    margin: 30px 30px 30px 30px;
     text-align: right;
-    text-decoration: underline;
-    
+    text-decoration: underline; 
 }
+
+.box {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 4em;
+    font-style: italic;
+    background-color: rgb(50, 131, 33);
+    color: blanchedalmond;
+    text-align: center;
+    margin: 0px 9vw 0px 9vw ;
+    padding: 30 0px 30px 0px;
+    position: relative;
+    transition: 0;
+}
+
 
 .caixa {
     text-align: center;
@@ -107,7 +118,6 @@ h2 {
     margin: 0px auto;
     background-color: whitesmoke;
 }
-
 
 .esquerda {
     float: left;
