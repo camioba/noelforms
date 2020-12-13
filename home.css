@@ -310,7 +310,7 @@ footer p {
     }
 
     input[type="checkbox"]:not(:checked) ~ nav{
-        transform: translateX(-150px);
+        transform: translateX(150px);
     } 
 
     .menu {
@@ -351,7 +351,7 @@ footer p {
         border-bottom: #a80505cc solid 4px;
     }
     
-    .banner {
+    .cabecalho {
         
         background-image: url(modulov.png);
         font-family: 'Archivo Black', sans-serif;
