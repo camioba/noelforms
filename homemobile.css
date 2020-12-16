@@ -1,318 +1,321 @@
-.container{
-    height: 50px;
-    width: 100%;
-    display: block;
-    padding: 15px 0px;
-    float: right;
-}
-  
-#checkbox-menu{
-    position: absolute;
-    opacity: 0;
-}
-  
-label{
-    cursor: pointer;
-    position: relative;
-    display: block;
-    height: 22px;
-    width: 30px;
-    float: right;
-    margin: 15px 9vw 15px 0px;
-    z-index: 1;
-}
-  
-label span{
+
+    .container{
+        height: 50px;
+        width: 100%;
+        display: block;
+        padding: 15px 0px;
+        float: right;
+    }
+      
+    #checkbox-menu{
+        position: absolute;
+        opacity: 0;
+    }
+      
+    label{
+        cursor: pointer;
+        position: relative;
+        display: block;
+        height: 22px;
+        width: 30px;
+        float: right;
+        margin: 15px 9vw 15px 0px;
+        z-index: 1;
+    }
+      
+    label span{
+        
+        position: absolute;
+        display: block;
+        height: 5px;
+        width: 100%;
+        border-radius: 30px;
+        background:#a80505cc;
+        transition: 0.25s ease-in-out;
+    }
+      
+    label span:nth-child(1) {
+        top: 0;
+    }
+      
+    label span:nth-child(2) {
+        top: 8px;
+    }
+      
+    label span:nth-child(3) {
+        top: 16px;
+    }
+      
+    #checkbox-menu:checked + label span:nth-child(1){
+        transform: rotate(-45deg);
+        top: 8px;
+    }
+      
+    #checkbox-menu:checked + label span:nth-child(2){
+        opacity: 0;
+    }
+      
+    #checkbox-menu:checked + label span:nth-child(3){
+        transform: rotate(45deg);
+        top:8px;
+    }
     
-    position: absolute;
-    display: block;
-    height: 5px;
-    width: 100%;
-    border-radius: 30px;
-    background:#a80505cc;
-    transition: 0.25s ease-in-out;
-}
-  
-label span:nth-child(1) {
-    top: 0;
-}
-  
-label span:nth-child(2) {
-    top: 8px;
-}
-  
-label span:nth-child(3) {
-    top: 16px;
-}
-  
-#checkbox-menu:checked + label span:nth-child(1){
-    transform: rotate(-45deg);
-    top: 8px;
-}
-  
-#checkbox-menu:checked + label span:nth-child(2){
-    opacity: 0;
-}
-  
-#checkbox-menu:checked + label span:nth-child(3){
-    transform: rotate(45deg);
-    top:8px;
-}
+    nav {
+        background-color: rgb(50, 131, 33);
+        width: 130px;
+        height: 105px;
+        padding: 30px 0;
+        float: right;
+        right: 0px;
+        position: absolute;
+        transition: all .3s ease-in-out;
+    }
 
-nav {
-    background-color: rgb(50, 131, 33);
-    width: 130px;
-    height: 105px;
-    padding: 30px 0;
-    float: right;
-    right: 0px;
-    position: absolute;
-    transition: all .3s ease-in-out;
-}
+    input[type="checkbox"]:not(:checked) ~ nav{
+        transform: translateX(150px);
+    } 
 
-input[type="checkbox"]:not(:checked) ~ nav{
-    transform: translateX(150px);
-} 
-
-.menu {
-    font-family: 'PT Sans', sans-serif;
-    text-align: right; 
+    .menu {
+        font-family: 'PT Sans', sans-serif;
+        text-align: right; 
+        
+    }
     
-}
-
-.menu ul {
-    position: none;
-    width: 10%;
-    height: 70px;
-    padding: 0px auto;
-    margin-top: 10px;
-    float: right;
-    margin-right: 9vw;
-
-}
-
-.menu li {
-    float: right;
-    font-size: 1.1em;
-    font-weight: normal;
-    padding: 0px auto;
-    margin-left: 0vw;
-}
-
-.menu li a {
-    display: block;
-    color: black;
-    text-decoration: none;
-    padding: 5px 0px 5px 0px;
-    transition: border-bottom .1s ease-in;
-    border-bottom: #a80505cc solid 0px;
-}
-
-li a:hover, li a:visited, li a:active {
-    border-bottom: #a80505cc solid 4px;
-}
-
-.cabecalho {
+    .menu ul {
+        position: none;
+        width: 10%;
+        height: 70px;
+        padding: 0px auto;
+        margin-top: 10px;
+        float: right;
+        margin-right: 9vw;
     
-    background-image: url(modulov.png);
-    font-family: 'Archivo Black', sans-serif;
-    font-size: 1.5em;
-    color: black;
-    text-align: left;
-    margin: 0px;
-    padding-top: 80px;
-    padding-bottom: 20px;
-}
-
-h1 {
-    margin: 0px 0px 0px 9vw;
-    color: black;
-}
-
-body {
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-    line-height: 1.5;
-    font-size: 1.1em;
-    letter-spacing: .5px;
-}
-
-p {
-    font-size: 1.1em;
-    margin: 0px auto;
-    padding: 20px 20px;
-    text-decoration: none;
-}
-
-.txt {
-    font-size: 1em;
-    background-color: rgb(50, 131, 33);
-    color: blanchedalmond;
-    text-align: left;
-    margin: 0px auto;
-    padding: 0px;
-    position: relative;
-    z-index: 0;
-    transition: background-color .4s ease, 
-                box-shadow .4s ease;
-}
-
-.txt:hover {
-    background-color: #a80505cc;
-    box-shadow: 5px 10px black;
-    animation: move1 .5s ease;
-    animation-direction: alternate;
-}
-
-@keyframes move1 {
-    0% {
-        top: 0px; left: 0px;
     }
-    10% {
-        bottom: 20px; right: 20px;
+    
+    .menu li {
+        float: right;
+        font-size: 1.1em;
+        font-weight: normal;
+        padding: 0px auto;
+        margin-left: 0vw;
     }
-    100% {
-        bottom: 20px; right: 20px;
+    
+    .menu li a {
+        display: block;
+        color: black;
+        text-decoration: none;
+        padding: 5px 0px 5px 0px;
+        transition: border-bottom .1s ease-in;
+        border-bottom: #a80505cc solid 0px;
+    }
+    
+    li a:hover, li a:visited, li a:active {
+        border-bottom: #a80505cc solid 4px;
+    }
+    
+    .cabecalho {
+        
+        background-image: url(modulov.png);
+        font-family: 'Archivo Black', sans-serif;
+        font-size: 1.5em;
+        color: black;
+        text-align: left;
+        margin: 0px;
+        padding-top: 80px;
+        padding-bottom: 20px;
+    }
+    
+    h1 {
+        margin: 0px 0px 0px 9vw;
+        color: black;
+        font-size: .9em;
+    }
+    
+    body {
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+        line-height: 1.5;
+        font-size: 1.1em;
+        letter-spacing: .5px;
+    }
+    
+    p {
+        font-size: 1.1em;
+        margin: 0px auto;
+        padding: 20px 20px;
+        text-decoration: none;
+    }
+    
+    .txt {
+        font-size: 1em;
+        background-color: rgb(50, 131, 33);
+        color: blanchedalmond;
+        text-align: left;
+        margin: 0px auto;
+        padding: 0px;
+        position: relative;
+        z-index: 0;
+        transition: background-color .4s ease, 
+                    box-shadow .4s ease;
+    }
+    
+    .txt:hover {
+        background-color: #a80505cc;
+        box-shadow: 5px 10px black;
+        animation: move1 .5s ease;
+        animation-direction: alternate;
+    }
+    
+    @keyframes move1 {
+        0% {
+            top: 0px; left: 0px;
+        }
+        10% {
+            bottom: 20px; right: 20px;
+        }
+        100% {
+            bottom: 20px; right: 20px;
+        }
+    
+    }
+    
+    h2 {
+        font-family: 'Archivo Black', sans-serif;
+        font-size: 2em;
+        margin: 30px 30px 30px 30px;
+        text-align: right;
+        text-decoration: underline; 
+        padding: 20px 20px;
+    }
+    
+    h3 {
+        font-family: 'Archivo Black', sans-serif;
+        font-size: 3em;
+        font-style: italic;
+        color: blanchedalmond;
+        text-align: center;
+    }
+    
+    .box {
+        background-color: rgb(50, 131, 33);
+        margin: 0px 9vw 0px 9vw ;
+        padding: 20vh 0px 20vh 0px;
+        position: relative;
+        animation: move2 2s ease;
+        transition: 0;
+    }
+    
+    @keyframes move2 {
+        0% {
+            transform: translate(0, 80px);
+            background-color: rgba(49, 131, 33, 0.3);
+        }
+        100% {
+            transform: translate(0px, 0px);
+            background-color:rgb(50, 131, 33);
+        }
+    }
+    
+    .caixa1 {
+        text-align: center;
+        padding: 50px 0px 50px 0px;
+        margin: 0px auto;
+        background-color: whitesmoke;
     }
 
-}
-
-h2 {
-    font-family: 'Archivo Black', sans-serif;
-    font-size: 2em;
-    margin: 30px 30px 30px 30px;
-    text-align: right;
-    text-decoration: underline; 
-    padding: 20px 20px;
-}
-
-h3 {
-    font-family: 'Archivo Black', sans-serif;
-    font-size: 3em;
-    font-style: italic;
-    color: blanchedalmond;
-    text-align: center;
-}
-
-.box {
-    background-color: rgb(50, 131, 33);
-    margin: 0px 9vw 0px 9vw ;
-    padding: 20vh 0px 20vh 0px;
-    position: relative;
-    animation: move2 2s ease;
-    transition: 0;
-}
-
-@keyframes move2 {
-    0% {
-        transform: translate(0, 80px);
-        background-color: rgba(49, 131, 33, 0.3);
+    .caixa2 {
+        text-align: center;
+        padding: 0px 0px 100px 0px;
+        margin: 0px auto;
+        background-color: whitesmoke;
     }
-    100% {
-        transform: translate(0px, 0px);
-        background-color:rgb(50, 131, 33);
+
+    .txt2 {
+        font-size: 1em;
+        background-color: rgb(50, 131, 33);
+        color: blanchedalmond;
+        text-align: left;
+        margin: 0px auto;
+        padding: 0px;
+        position: relative;
+        z-index: 0;
+        transition: background-color .4s ease, 
+                    box-shadow .4s ease;
     }
-}
+    
+    .esquerda, .direita {
+        margin: 0px auto;
+        margin-top: 30px;
+        padding: 0px auto;
+    }
+    
+    .imgesq, .imgdir {
+        background-color: goldenrod;
+        margin: 0px auto;
+        margin: 0px auto;
+        padding: 0px auto;
+    }
 
-.caixa1 {
-    text-align: center;
-    padding: 50px 0px 50px 0px;
-    margin: 0px auto;
-    background-color: whitesmoke;
-}
+    .col40 {
+        width: 80%;
+    }
 
-.caixa2 {
-    text-align: center;
-    padding: 0px 0px 100px 0px;
-    margin: 0px auto;
-    background-color: whitesmoke;
-}
+    .col20 {
+        width: 40%;
+    }
 
+    .col60 {
+        width: 20%;
+    }
+    
+    .clearfix:after {
+        content: ".";
+        visibility: hidden;
+        clear: both;
+        display: block;
+        height: 0;
+    }
+    
+    footer p { 
+        margin-top: 70px;
+    }
+    
+    .txtfooter {
+        background-image: url("modulov.png");
+        font-family: 'Roboto', sans-serif;
+        font-size: 0.8em;
+        color:black;
+        text-align: left;
+        margin: 0px auto;
+        padding: 0px auto;
+        float: left;
+        height: 40%;
+    }
+    
+    .meiofooter {
+        background-image: url("modulov.png");
+        margin: 0px;
+        height: 40%;
+        float: left;
+    }
+    
+    .divfooter {
+        background-image: url("modulov.png");
+        margin: 0px auto;
+        padding: 0px;
+        float: left;
+        height: 40%;   
+    }
+    
+    .imgfooter {
+        margin-top: 80px;
+    }
+    
+    .caixaf {
+        text-align: center;
+        padding: 0px;
+        margin: 0px auto;
+        background-color: whitesmoke;
+    }
+    
 
-.txt2 {
-    font-size: 1em;
-    background-color: rgb(50, 131, 33);
-    color: blanchedalmond;
-    text-align: left;
-    margin: 0px auto;
-    padding: 0px;
-    position: relative;
-    z-index: 0;
-    transition: background-color .4s ease, 
-                box-shadow .4s ease;
-} 
-
-.esquerda, .direita {
-    margin: 0px auto;
-    margin-top: 30px;
-    padding: 0px auto;
-}
-
-.imgesq, .imgdir {
-    background-color: goldenrod;
-    margin: 0px auto;
-    margin: 0px auto;
-    padding: 0px auto;
-}
-
-.col40 {
-    width: 80%;
-}
-
-.col20 {
-    width: 40%;
-}
-
-.col60 {
-    width: 20%;
-}
-
-.clearfix:after {
-    content: ".";
-    visibility: hidden;
-    clear: both;
-    display: block;
-    height: 0;
-}
-
-footer p { 
-    margin-top: 70px;
-}
-
-.txtfooter {
-    background-image: url("modulov.png");
-    font-family: 'Roboto', sans-serif;
-    font-size: 0.8em;
-    color:black;
-    text-align: left;
-    margin: 0px auto;
-    padding: 0px auto;
-    float: left;
-    height: 40%;
-}
-
-.meiofooter {
-    background-image: url("modulov.png");
-    margin: 0px;
-    height: 40%;
-    float: left;
-}
-
-.divfooter {
-    background-image: url("modulov.png");
-    margin: 0px auto;
-    padding: 0px;
-    float: left;
-    height: 40%;   
-}
-
-.imgfooter {
-    margin-top: 80px;
-}
-
-.caixaf {
-    text-align: center;
-    padding: 0px;
-    margin: 0px auto;
-    background-color: whitesmoke;
-}
