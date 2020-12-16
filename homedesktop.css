@@ -1,5 +1,24 @@
-@media only screen and (min-width: 601px) {
-    /* Código para versão web */
+.container {
+    height: 0px auto;
+    width: 0px auto;
+    padding: 0px auto;
+    display: block;
+}
+      
+#checkbox-menu {
+    opacity: 0;
+}
+  
+#checkbox-menu{
+    position: absolute;
+    opacity: 0;
+}
+
+nav {
+    width: 0px auto;
+    height: 0px auto;
+    padding: 0px auto;
+}
 
 .menu {
     font-family: 'PT Sans', sans-serif;
@@ -14,8 +33,6 @@
     width: 100%;
     height: 70px;
     padding: 0px 0px 0px 7vw;
-    
-
 }
 
 .menu li {
@@ -40,7 +57,7 @@ li a:hover, li a:visited, li a:active {
     border-bottom: #a80505cc solid 4px;
 }
 
-header div {
+.cabecalho {
     
     background-image: url(modulov.png);
     font-family: 'Archivo Black', sans-serif;
@@ -62,6 +79,7 @@ body {
     text-align: center;
     line-height: 1.5;
     font-size: 1.1em;
+    letter-spacing: 0.5px;
 }
 
 p {
@@ -138,13 +156,32 @@ h3 {
     }
 }
 
-.caixa {
+.caixa1 {
     text-align: center;
-    padding: 10px 0px 10px 0px;
+    padding: 50px 0px 20px 0px;
     margin: 0px auto;
     background-color: whitesmoke;
 }
 
+.caixa2 {
+    text-align: center;
+    padding: 20px 0px 100px 0px;
+    margin: 0px auto;
+    background-color: whitesmoke;
+}
+
+.txt2 {
+    font-size: 1em;
+    background-color: rgb(50, 131, 33);
+    color: blanchedalmond;
+    text-align: left;
+    margin: 0px auto;
+    padding: 0px;
+    position: relative;
+    z-index: 0;
+    transition: background-color .4s ease, 
+                box-shadow .4s ease;
+}
 
 .esquerda {
     float: left;
@@ -225,5 +262,4 @@ footer p {
     padding: 0px;
     margin: 0px auto;
     background-color: whitesmoke;
-}
 }

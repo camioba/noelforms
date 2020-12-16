@@ -1,13 +1,26 @@
-@media only screen and (min-width: 601px) {
+@media only screen and (min-width: 701px) {
     /* Código para versão web */
 .container {
-    height: 0px;
-    width: 0px;
-    display: none;
+    height: 0px auto;
+    width: 0px auto;
+    padding: 0px auto;
+    display: block;
 }
       
 #checkbox-menu {
     opacity: 0;
+}
+  
+#checkbox-menu{
+    position: absolute;
+    opacity: 0;
+}
+
+nav {
+    width: 0px auto;
+    height: 0px auto;
+    padding: 0px auto;
+    z-index: 9999;  
 }
 
 .menu {
@@ -47,7 +60,7 @@ li a:hover, li a:visited, li a:active {
     border-bottom: #a80505cc solid 4px;
 }
 
-header div {
+.cabecalho {
     
     background-image: url(modulov.png);
     font-family: 'Archivo Black', sans-serif;
@@ -86,23 +99,19 @@ p {
     padding: 0px;
     position: relative;
     z-index: 0;
-    transition: background-color .4s ease, 
-                box-shadow .4s ease;
+    transition: all .5s ease;
 }
 
 .txt:hover {
     background-color: #a80505cc;
     box-shadow: 5px 10px black;
     animation: move1 .5s ease;
-    animation-direction: alternate;
+    bottom: 20px; right: 20px;
 }
 
 @keyframes move1 {
     0% {
-        top: 0px; left: 0px;
-    }
-    10% {
-        bottom: 20px; right: 20px;
+        bottom: 0px; right: 0px;
     }
     100% {
         bottom: 20px; right: 20px;
@@ -146,11 +155,33 @@ h3 {
     }
 }
 
-.caixa {
+.caixa1 {
     text-align: center;
-    padding: 50px 0px 50px 0px;
+    padding: 50px 0px 20px 0px;
     margin: 0px auto;
     background-color: whitesmoke;
+}
+
+.caixa2 {
+    text-align: center;
+    padding: 20px 0px 100px 0px;
+    margin: 0px auto;
+    background-color: whitesmoke;
+    position: absolute;
+   
+}
+
+.txt2 {
+    font-size: 1em;
+    background-color: rgb(50, 131, 33);
+    color: blanchedalmond;
+    text-align: left;
+    margin: 0px auto;
+    padding: 0px;
+    position: relative;
+    z-index: 0;
+    transition: background-color .4s ease, 
+                box-shadow .4s ease;
 }
 
 .esquerda {
@@ -165,6 +196,7 @@ h3 {
     margin: 0px auto;
     padding: 0px auto;
     margin-right: 9vw;
+   
 }
 
 .imgesq {
@@ -173,6 +205,8 @@ h3 {
     margin: 0px auto;
     margin-left: 9vw;
     padding: 0px;
+    transition: all .4s ease;
+    z-index: 0;
     
 }
 
@@ -182,9 +216,43 @@ h3 {
     margin: 0px auto;
     margin-right: 9vw;
     padding: 0px;
+    transition: all .4s ease;
+    
 }
 
-.clearfix:after {
+.pflutuante {
+    background-color: rgb(50, 131, 33);
+    position: absolute;
+    height: 120px;
+    font-size: .9em;
+    top: 70%;
+    right: 19%;
+    padding-bottom: 20px;
+    display: none;
+    transition: all .4s ease;
+    z-index: 1;
+}
+
+.imgesq:hover, .imgdir:hover{
+    filter: grayscale(100%) sepia(20%) brightness(100%);
+}
+
+.imgdir:hover ~ .pflutuante, .pflutuante:hover {
+    display: block;
+    animation: move3 .4s ease;
+}
+
+@keyframes move3 {
+    0% {
+        transform: translate(0, 40px);
+    }
+        
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+.clearfix:after {   
     content: ".";
     visibility: hidden;
     clear: both;
@@ -193,7 +261,7 @@ h3 {
 }
 
 footer p { 
-    margin-top: 60px;
+    margin-top: 70px;
 }
 
 .txtfooter {
@@ -205,13 +273,13 @@ footer p {
     margin: 0px auto;
     padding: 0px auto;
     float: left;
-    height: 25%;
+    height: 40%;
 }
 
 .meiofooter {
     background-image: url("modulov.png");
     margin: 0px;
-    height: 25%;
+    height: 40%;
     float: left;
 }
 
@@ -220,11 +288,11 @@ footer p {
     margin: 0px auto;
     padding: 0px;
     float: left;
-    height: 25%;   
+    height: 40%;   
 }
 
 .imgfooter {
-    margin-top: 30px;
+    margin-top: 80px;
 }
 
 .caixaf {
@@ -232,11 +300,12 @@ footer p {
     padding: 0px;
     margin: 0px auto;
     background-color: whitesmoke;
+
 }
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
     /* Código para versão mobile */
     .container{
         height: 50px;
@@ -269,7 +338,7 @@ footer p {
         height: 5px;
         width: 100%;
         border-radius: 30px;
-        background: #f16234;
+        background:#a80505cc;
         transition: 0.25s ease-in-out;
     }
       
@@ -300,13 +369,14 @@ footer p {
     }
     
     nav {
-        background-color: rgba(0, 0, 0, 0.445);
-        width: 150px;
-        height: 130px;
+        background-color: rgb(50, 131, 33);
+        width: 130px;
+        height: 105px;
         padding: 30px 0;
         float: right;
         right: 0px;
         position: absolute;
+        transition: all .3s ease-in-out;
     }
 
     input[type="checkbox"]:not(:checked) ~ nav{
@@ -324,7 +394,7 @@ footer p {
         width: 10%;
         height: 70px;
         padding: 0px auto;
-        margin-top: 35px;
+        margin-top: 10px;
         float: right;
         margin-right: 9vw;
     
@@ -366,6 +436,7 @@ footer p {
     h1 {
         margin: 0px 0px 0px 9vw;
         color: black;
+        font-size: .9em;
     }
     
     body {
@@ -465,6 +536,19 @@ footer p {
         padding: 0px 0px 100px 0px;
         margin: 0px auto;
         background-color: whitesmoke;
+    }
+
+    .txt2 {
+        font-size: 1em;
+        background-color: rgb(50, 131, 33);
+        color: blanchedalmond;
+        text-align: left;
+        margin: 0px auto;
+        padding: 0px;
+        position: relative;
+        z-index: 0;
+        transition: background-color .4s ease, 
+                    box-shadow .4s ease;
     }
     
     .esquerda, .direita {
