@@ -1,4 +1,4 @@
-@media only screen and (min-width: 701px) {
+@media only screen and (min-width: 801px) {
     /* Código para versão web */
 .container {
     height: 0px auto;
@@ -239,8 +239,13 @@ h3 {
 
 .imgdir:hover ~ .pflutuante, .pflutuante:hover {
     display: block;
-    animation: move3 .4s ease;
+    animation: move3 .4s ease;    
 }
+
+.pflutuante:hover ~ .imgdir {
+    filter: grayscale(100%) sepia(20%) brightness(100%);
+}
+
 
 @keyframes move3 {
     0% {
@@ -306,8 +311,9 @@ footer p {
 }
 
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 800px) {
     /* Código para versão mobile */
+    
     .container{
         height: 50px;
         width: 100%;
@@ -628,4 +634,3 @@ footer p {
     }
     
 
-}
