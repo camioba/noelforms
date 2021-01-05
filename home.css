@@ -384,10 +384,13 @@ footer p {
         right: 0px;
         position: absolute;
         transition: all .3s ease-in-out;
+        transform: translateX(130px);
+        display: none;
     }
 
-    input[type="checkbox"]:not(:checked) ~ nav{
-        transform: translateX(150px);
+    input[type="checkbox"]:checked ~ nav{
+        transform: translateX(0px);
+        display: block;
     } 
 
     .menu {
@@ -632,5 +635,4 @@ footer p {
         margin: 0px auto;
         background-color: whitesmoke;
     }
-    
-
+}
