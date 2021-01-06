@@ -298,6 +298,12 @@ footer p {
     li a:hover, li a:visited, li a:active {
         border-bottom: #a80505cc solid 4px;
     }
+
+    .fab {
+        font-size: 2em;
+        font-weight: normal;
+        color: black;
+    }
     
     .cabecalho {
         background-image: url(modulov.png);
