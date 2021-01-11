@@ -1,14 +1,11 @@
-@media only screen and (min-width: 801px) {
+@media only screen and (min-width: 701px) {
     /* Código para versão web */
 .container {
     height: 0px auto;
     width: 0px auto;
     padding: 0px auto;
     display: block;
-}
-      
-#checkbox-menu {
-    opacity: 0;
+    z-index: 100;
 }
   
 #checkbox-menu{
@@ -19,14 +16,15 @@
 nav {
     width: 0px auto;
     height: 0px auto;
-    padding: 0px auto;
-    z-index: 9999;  
+    padding: 0px auto; 
+    
 }
 
 .menu {
     font-family: 'PT Sans', sans-serif;
     text-align: center;      
-    z-index: 9999;
+    z-index: 100;
+    
 }
 
 .menu ul {
@@ -60,8 +58,26 @@ li a:hover, li a:visited, li a:active {
     border-bottom: #a80505cc solid 4px;
 }
 
+.fab {
+    font-size: 1.4em;
+    color: black;
+    position: absolute;
+    top: 30%;
+}
+
+.fa-facebook {
+    right: 23%;
+}
+
+.fa-instagram {
+    right: 19%;
+}
+
+.fa-twitter {
+    right: 15%;
+}
+
 .cabecalho {
-    
     background-image: url(modulov.png);
     font-family: 'Archivo Black', sans-serif;
     font-size: 1.5em;
@@ -70,6 +86,7 @@ li a:hover, li a:visited, li a:active {
     margin: 0px;
     padding-top: 80px;
     padding-bottom: 20px;
+    z-index: 0;
 }
 
 h1 {
@@ -168,7 +185,7 @@ h3 {
     margin: 0px auto;
     background-color: whitesmoke;
     position: absolute;
-   
+    z-index: 0;
 }
 
 .txt2 {
@@ -311,7 +328,7 @@ footer p {
 }
 
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 700px) {
     /* Código para versão mobile */
     
     .container{

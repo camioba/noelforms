@@ -1,4 +1,4 @@
-@media only screen and (min-width: 801px) {
+@media only screen and (min-width: 701px) {
     /* Código para versão web */
 .container {
     height: 0px auto;
@@ -9,17 +9,19 @@
           
 #checkbox-menu {
     opacity: 0;
-}
-      
-#checkbox-menu{
     position: absolute;
-    opacity: 0;
 }
     
 nav {
     width: 0px auto;
     height: 0px auto;
     padding: 0px auto;
+}
+
+.menu {
+    font-family: 'PT Sans', sans-serif;
+    text-align: center;      
+    z-index: 1;
 }
 
 .menu ul {
@@ -33,8 +35,8 @@ nav {
 
 .menu li {
     float: left;
-    font-size: 1.1em;
     font-weight: normal;
+    font-size: 1.1em;
     padding: 0px 2vw 0px 2vw;
     margin-left: 0vw;
 }
@@ -46,27 +48,36 @@ nav {
     text-align: center;
     padding: 20px 0px 3px 0px;
     transition: border-bottom .1s ease-in;
-    border-bottom: #a80505cc solid 0px;
 }
 
-li a:hover, li a:visited, li a:active {
+.menu ul li:nth-child(2) a {
     border-bottom: #a80505cc solid 4px;
 }
 
-.cabecalho {
-    
-    background-image: url(modulov.png);
-    font-family: 'Archivo Black', sans-serif;
-    font-size: 1.5em;
+li a:hover {
+    border-bottom: #a80505cc solid 4px;
+}
+
+.fab {
+    font-size: 1.2em;
     color: black;
-    text-align: left;
-    margin: 0px;
-    padding-top: 80px;
-    padding-bottom: 20px;
+    position: absolute;
+    top: 30%;
+}
+
+.fa-facebook {
+    right: 27%;
+}
+
+.fa-instagram {
+    right: 21%;
+}
+
+.fa-twitter {
+    right: 15%;
 }
 
 .cabecalho {
-    
     background-image: url(modulov.png);
     font-family: 'Archivo Black', sans-serif;
     font-size: 1.5em;
@@ -175,7 +186,7 @@ footer p {
 }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 700px) {
     /* Código para versão mobile */
     .container{
         height: 80px;
@@ -288,17 +299,19 @@ footer p {
         text-decoration: none;
         padding: 20px 0px 5px 0px;
         width: 60vw;
-        transition: border-bottom .1s ease-in;
-        border-bottom: #a80505cc solid 0px;
+        transition: all .1s ease-in;
+        
     }
-    .menu li a:nth-child(2) {
-        border-bottom: #a80505cc solid 4px;
-    }
-    
-    li a:hover, li a:visited, li a:active {
+
+    .menu ul li:nth-child(2) a {
         border-bottom: #a80505cc solid 4px;
     }
 
+    li a:hover {
+        border-bottom: #a80505cc solid 4px;
+    }
+    
+        
     .fab {
         font-size: 2em;
         color: black;
